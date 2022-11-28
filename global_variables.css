@@ -1,0 +1,28 @@
+/* global variables */
+
+:root {
+    /* RWD */
+    --media-tablet: (min-width: 992px);
+    --media-pc: (min-width: 1300px);
+    /* containters */
+    --global-width: min(calc(320px + ((1vw - 3.6px) * 88)), 1066px);
+    /* colors */
+    --color-white: #fff;
+    --color-black: #000;
+    /* fonts */
+    --font-family-main: "Montserrat", sans-serif;
+    --font-family-amatic: "Amatic SC", sans-serif;
+    --mr_fontsize__small: min(max(12px, 1.3rem), 14px);
+    --mr_fontsize__normal: min(max(13px, 1.5rem), 15px);
+    --mr_fontsize__subtitle: min(max(18px, 2rem), 20px);
+    --mr_fontsize__medium: min(max(20px, 2.5rem), 25px);
+    --mr_fontsize__big: min(max(23px, 3.1rem), 30px);
+    --mr_fontsize__semi_big: min(max(28px, 3.2rem), 35px);
+    --mr_fontsize__bigger: min(max(31px, 4.2rem), 41px);
+    --mr_fontsize__name-coffee: min(max(67px, 6.2rem), 87px);
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weigth-medium: 500;
+    --font-weigth-semi-bold: 600;
+    --font-weight-bold: 700;
+}

@@ -1,0 +1,225 @@
+/* containers */
+
+:root {
+    /* RWD */
+    --media-tablet: (min-width: 992px);
+    --media-pc: (min-width: 1300px);
+    /* containters */
+    --global-width: min(calc(320px + ((1vw - 3.6px) * 88)), 1066px);
+    /* colors */
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+.cont {
+    width: var(--global-width);
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.mr_x_auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#form1,
+#form2,
+#form3 {
+    display: none;
+}
+
+.main_form {
+    grid-template-columns: 30% 70%;
+    width: max-content;
+}
+
+.main_form__inputs,
+.form_labels,
+.form_inputs,
+.main_form__labels {
+    gap: 1rem;
+}
+
+.type_switcher {
+    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    margin-top: 1.5rem;
+}
+
+.main input,
+select {
+    padding: 0.3rem 0.2rem;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.adding_products_buttons {
+    right: 44px;
+    top: -106px;
+}
+
+.main {
+    padding: 3rem 0;
+}
+
+footer {
+    text-align: center;
+}
+
+#form1,
+#form2,
+#form3 {
+    margin-top: 1.5rem;
+    grid-template-columns: 37% 63%;
+    width: max-content;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+strong {
+    grid-column: 1/3;
+    padding-top: 0.5rem;
+    font-size: 13px;
+}
+
+.form_labels label,
+.main_form__labels label {
+    align-self: center;
+}
+
+button {
+    background: #fff;
+    border: solid 1px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.single_product_information_container {
+    border: solid 3px #000;
+    padding: 26px 30px 47px 30px;
+}
+
+.product_list_container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+    padding: 1rem 0;
+}
+
+.single_product_information_container p {
+    margin: 0;
+}
+
+.single_product_information_container .single_product_information:not(:first-child) {
+    text-align: center;
+}
+
+.single_product_information input {
+    margin: 0;
+}
+
+.single_product_information:first-child {
+    top: 12px;
+    left: 12px;
+}
+
+@media only screen and (max-width: 940px) {
+    .product_list_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .product_list_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .product_list_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.error_notification {
+    align-self: center;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.product_action_container {
+    top: -55px;
+    right: 0;
+}
+
+.product_action_container input,
+.adding_products_buttons input {
+    background: none;
+    font-size: 15px;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 2px 5px;
+}
+
+.product_action_container input:hover,
+.adding_products_buttons input:hover {
+    color: #fff;
+    background: #000;
+}
+
+.product_action_container a:first-child {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    border: solid 1px #000;
+    padding: 2px 5px;
+    transition: all .3s ease;
+}
+
+.product_action_container a:first-child:hover {
+    color: #fff;
+    background: #000;
+}
+
+.adding_products_buttons a:nth-child(2) input {
+    width: 62px;
+}
